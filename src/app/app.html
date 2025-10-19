@@ -1,6 +1,4 @@
+<button (click)="toggleMonster()" >Toggle Monster</button>
 <div id="card-list">
-  <app-search-bar (searchButtonClicked)="inrCount()"/>
-  Click count is {{count}}.
-  <app-playing-cards [monster]="monster1"/>
-  <app-playing-cards [monster]="monster2"/>
+  <app-playing-cards [monster]="selectedMonster()"/>
 </div>
